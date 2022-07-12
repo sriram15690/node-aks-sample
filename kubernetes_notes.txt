@@ -1,3 +1,5 @@
 Merged "trialaks1" as current context in /Users/sriramr/.kube/config
 
 kubectl expose deploy nodewebb-69d5b44c99-6txfn --name=node-app --port=80 --target-port=8080 --type=LoadBalancer
+
+https://gist.github.com/sriram15690/24ebad9d2716c630189e173363f454bb
