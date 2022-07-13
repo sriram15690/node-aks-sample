@@ -3,3 +3,101 @@ Merged "trialaks1" as current context in /Users/sriramr/.kube/config
 kubectl expose deploy nodewebb-69d5b44c99-6txfn --name=node-app --port=80 --target-port=8080 --type=LoadBalancer
 
 https://gist.github.com/sriram15690/24ebad9d2716c630189e173363f454bb
+
+
+676  touch Dockerfile
+  677  node -v
+  678  docker build .
+  679  docker images
+  680  docker tag node-app
+  681  docker tag f5d9c3536408 node-app
+  682  docker tag node-app
+  683  docker images
+  684  docker build .
+  685  docker images
+  686  docker tag 68ec33a8a4af node-app2
+  687  docker run -p 4900:8080
+  688  docker run -p 4900:8080 node-app2
+  689  docker build .
+  690  docker images
+  691  docker tag 9b9bfc18c8b6
+  692  docker tag 9b9bfc18c8b6 node-app3
+  693  docker run -p 4900:8080 node-app2
+  694  docker build .
+  695  docker images
+  696  docker tag 91c4142ae711 node-app4
+  697  docker run -p 4900:8080 node-app3
+  698  docker run -p 4900:8080 node-app4
+  699  docker images
+  700  docker ps
+  701  docker images
+  702  docker run -p 4900:8080 -d node-app4
+  703  docker images
+  704  docker ps
+  705  docker login
+  706  docker login trialaks1.azurecr.io
+  707  docker tag 91c4142ae711 trialaks1.azurecr.io/node-app4
+  708  az acr login -n $acr
+  709  az login
+  710  brew install azure-cli
+  711  azure-cli -v
+  712  az login
+  713  brew install kubectl
+  714  brew reinstall kubernetes-cli
+  715  az acr login -n $CE
+  716  az acr login -n $acr
+  717  az acr login 
+  718  az acr login -n trialaks1
+  719  docker images
+  720  docker push trialaks1.azurecr.io/node-app4 
+  721  kubectl get pods
+  722  kubectl get pod
+  723  restart
+  724  kubectl cluster-info
+  725  kubectl version --client\n
+  726  kubectl cluster-info
+  727  kubectl cluster-info dump
+  728  brew install minikube
+  729  minikube start
+  730  az login
+  731  az aks Get-AzAksCluster
+  732  az account set --subscription 3c6603bb-c81b-4782-a1c4-a4baa13eac5c
+  733  kubectl cluster-info
+  734  az aks get-credentials --resource-group trialask1 --name trialaks1
+  735  kubectl get deployments --all-namespaces=true
+  736  kubectl cluster-info
+  737  kubectl get po
+  738  docker images
+  739  kubectl created deploy nodewebb trialaks1.azurecr.io/node-app4  
+  740  kubectl create deploy nodewebb trialaks1.azurecr.io/node-app4  
+  741  kubectl create deploy nodewebb --image=trialaks1.azurecr.io/node-app4  
+  742  kubectl get deploy
+  743  kubectl get po
+  744  kubectl expose deploy nodeweb --name=node-app
+  745  kubectl get po
+  746  kubectl expose deploy nodewebb-69d5b44c99-6txfn --name=node-app --port=80 --target-port=8080 --type=LoadBalancer
+  747  kubectl expose deploy nodeweb --name=node-app --port=80 --target-port=8080 --type=LoadBalancer
+  748  kubectl expose deploy nodewebb --name=node-app --port=80 --target-port=8080 --type=LoadBalancer
+  749  kubectl get po
+  750  kubectl get svc
+  751  docker info
+  752  ~/Library
+  753  cd Containers
+  754  ls
+  755  cd ~/Library/Containers/com.docker.docker/Data/vms/0/
+  756  ls
+  757  xcd data
+  758  cd data
+  759  ls
+  760  cd ..
+  761  ls
+  762  cd ..
+  763  ls
+  764  cd ..
+  765  ls
+  766  history
+  767  cd Do
+  768  cd Documents
+  769  cd projects
+  770  ls
+  771  npm init react-app hello-world
